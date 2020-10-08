@@ -45,7 +45,11 @@ function draw(){
     Engine.update(engine);
     background(0);
 
-    n=random(1,4);
+    n=Math.round(random(1,4));
+
+    if(n===frameCount%20)
+    {
+    
 
     switch(n)
     {
@@ -62,7 +66,7 @@ function draw(){
             image(fourth,random(30,1770),100);
         break;
     }
-
+    }
     umbrella.display();
 
     for(var i=0; i<maxdrops; i+=1){
