@@ -43,7 +43,7 @@ function setup(){
 function draw(){
     imageMode(CENTER);
     Engine.update(engine);
-    background(255);
+    background(0);
 
     n=random(1,4);
 
